@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tutoring.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body> 
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/logoFox.svg" alt="logo fox" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="tutoring.html">Репетиторство</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="preschool.html">Підготовка до школи</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="camp.html">Дитячий табір відпочинку</a>
+          </li>
+        </ul>
+        <span class="navbar-text navName">
+            Клуб "пані Вчительки"
+        </span>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="mainTutoring">
+      <div class="mainTutoringGrad"></div>
+      <h1 class="">Репетиторство</h1>
+      <a href="#formTutoring">Спробувати безкоштовно!!!</a>
+  </div>
+
+
+  <div class="about_tutoring">
+    <div class="container tutoring">
+        <h2>Як відбувається Репетиторство?</h2>
+        <p>Проведення репетиторства включає в себе декілька етапів, які спрямовані на успішне навчання і розвиток учня. Ось загальні етапи проведення репетиторства:</p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Оцінка потреб учня:
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                    <li>Початковий етап - зустріч з учнем і/або батьками для визначення потреб, мети та цілей навчання.</li>
+                    <li>Визначення рівня підготовки учня в предметі або області, яку він хоче вивчати.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Розробка індивідуального плану:
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                    <li>Спільно з учнем розробка індивідуального навчального плану, включаючи визначення тем, завдань і методів навчання.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Проведення уроків:
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                    <li>Постійні заняття, під час яких репетитор надає матеріали, пояснення і завдання для виконання.</li>
+                    <li>Використання різних методів і підходів для досягнення мети навчання.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Контроль і оцінка:
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                    <li>Регулярна перевірка знань і розвитку учня через тести, завдання та інші методи.</li>
+                    <li>Постійний моніторинг прогресу та внесення коректив в навчальний план при необхідності.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Мотивація та підтримка:
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                    <li>Заохочення та підтримка учня для підвищення мотивації та віри в успіх.</li>
+                    <li>Розвиток навичок самодисципліни та самоорганізації.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Підсумкова оцінка і корекція:
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                    <li>Оцінка досягнень учня після завершення репетиторства.</li>
+                    <li>Планування подальших кроків для підвищення навчального рівня.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Зворотний зв'язок:
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <ul class="accordion-body">
+                    <li>Зв'язок з батьками або учнем після закінчення курсу для оцінки результатів і отримання відгуків.</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+          <p>Кожен етап репетиторства вимагає індивідуального підходу, терпіння і співпраці між репетитором, учнем і, можливо, батьками. Досягнення успіху у репетиторстві вимагає від усіх сторін роботи та зосередженості на поставлених цілях.</p>
+    </div>
+  </div>
+  
+  
+  <div class="services_tutoring">
+    <div class="container">
+      <h2>Вартість послуг</h2>
+      <div class="services_tutoring_cont">
+        <div class="services_tutoring_block">
+          <h3>Індивідуальні</h3>
+          <p>Індивідуальне заняття - це персоналізований підхід до навчання, де учитель адаптує матеріали і методи до потреб та рівня кожного учня.</p>
+          <p class="price">400 грн/год</p>
+        </div>
+        <div class="services_tutoring_block">
+          <h3>Групові</h3>
+          <p>Навчальний відбувається процес, в якому декілька учнів взаємодіють та вчаться разом під керівництвом одного вчителя або інструктора.</p>
+          <p class="price">300 грн/год</p>
+        </div>
+        <div class="services_tutoring_block">
+          <h3>Онлайн</h3>
+          <p>Навчання проводиться через інтернет, де учитель і учень спілкуються та вчаться віддалено, використовуючи відеоконференції та інші онлайн-інструменти.</p>
+          <p class="price">350 грн/год</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="regestration_cont">
+      <div class="container regestration" id="formTutoring">
+          <h2>Реєстрація заняття</h2>
+          <p>Перше заняття бекоштовне!</p>
+          <div>
+            <div class="schedule">
+              <h4>1 Етап</h4>
+              <p>Виберіть зручний для вас час</p>
+              <table id="schedule">
+                  <tr>
+                      <th></th>
+                      <th>Понеділок</th>
+                      <th>Вівторок</th>
+                      <th>Середа</th>
+                      <th>Четвер</th>
+                      <th>П'ятниця</th>
+                      <th>Субота</th>
+                      <th>Неділя</th>
+                  </tr>
+                  <tr>
+                      <th>9:00</th>
+                      <td data-hour="9:00" data-day="Пн"></td>
+                      <td data-hour="9:00" data-day="Вт"></td>
+                      <td data-hour="9:00" data-day="Ср"></td>
+                      <td data-hour="9:00" data-day="Чт"></td>
+                      <td data-hour="9:00" data-day="Пт"></td>
+                      <td data-hour="9:00" data-day="Сб"></td>
+                      <td data-hour="9:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>10:00</th>
+                      <td data-hour="10:00" data-day="Пн"></td>
+                      <td data-hour="10:00" data-day="Вт"></td>
+                      <td data-hour="10:00" data-day="Ср"></td>
+                      <td data-hour="10:00" data-day="Чт"></td>
+                      <td data-hour="10:00" data-day="Пт"></td>
+                      <td data-hour="10:00" data-day="Сб"></td>
+                      <td data-hour="10:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>11:00</th>
+                      <td data-hour="11:00" data-day="Пн"></td>
+                      <td data-hour="11:00" data-day="Вт"></td>
+                      <td data-hour="11:00" data-day="Ср"></td>
+                      <td data-hour="11:00" data-day="Чт"></td>
+                      <td data-hour="11:00" data-day="Пт"></td>
+                      <td data-hour="11:00" data-day="Сб"></td>
+                      <td data-hour="11:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>12:00</th>
+                      <td data-hour="12:00" data-day="Пн"></td>
+                      <td data-hour="12:00" data-day="Вт"></td>
+                      <td data-hour="12:00" data-day="Ср"></td>
+                      <td data-hour="12:00" data-day="Чт"></td>
+                      <td data-hour="12:00" data-day="Пт"></td>
+                      <td data-hour="12:00" data-day="Сб"></td>
+                      <td data-hour="12:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>13:00</th>
+                      <td data-hour="13:00" data-day="Пн"></td>
+                      <td data-hour="13:00" data-day="Вт"></td>
+                      <td data-hour="13:00" data-day="Ср"></td>
+                      <td data-hour="13:00" data-day="Чт"></td>
+                      <td data-hour="13:00" data-day="Пт"></td>
+                      <td data-hour="13:00" data-day="Сб"></td>
+                      <td data-hour="13:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>14:00</th>
+                      <td data-hour="14:00" data-day="Пн"></td>
+                      <td data-hour="14:00" data-day="Вт"></td>
+                      <td data-hour="14:00" data-day="Ср"></td>
+                      <td data-hour="14:00" data-day="Чт"></td>
+                      <td data-hour="14:00" data-day="Пт"></td>
+                      <td data-hour="14:00" data-day="Сб"></td>
+                      <td data-hour="14:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>15:00</th>
+                      <td data-hour="15:00" data-day="Пн"></td>
+                      <td data-hour="15:00" data-day="Вт"></td>
+                      <td data-hour="15:00" data-day="Ср"></td>
+                      <td data-hour="15:00" data-day="Чт"></td>
+                      <td data-hour="15:00" data-day="Пт"></td>
+                      <td data-hour="15:00" data-day="Сб"></td>
+                      <td data-hour="15:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>16:00</th>
+                      <td data-hour="16:00" data-day="Пн"></td>
+                      <td data-hour="16:00" data-day="Вт"></td>
+                      <td data-hour="16:00" data-day="Ср"></td>
+                      <td data-hour="16:00" data-day="Чт"></td>
+                      <td data-hour="16:00" data-day="Пт"></td>
+                      <td data-hour="16:00" data-day="Сб"></td>
+                      <td data-hour="16:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>17:00</th>
+                      <td data-hour="17:00" data-day="Пн"></td>
+                      <td data-hour="17:00" data-day="Вт"></td>
+                      <td data-hour="17:00" data-day="Ср"></td>
+                      <td data-hour="17:00" data-day="Чт"></td>
+                      <td data-hour="17:00" data-day="Пт"></td>
+                      <td data-hour="17:00" data-day="Сб"></td>
+                      <td data-hour="17:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>18:00</th>
+                      <td data-hour="18:00" data-day="Пн"></td>
+                      <td data-hour="18:00" data-day="Вт"></td>
+                      <td data-hour="18:00" data-day="Ср"></td>
+                      <td data-hour="18:00" data-day="Чт"></td>
+                      <td data-hour="18:00" data-day="Пт"></td>
+                      <td data-hour="18:00" data-day="Сб"></td>
+                      <td data-hour="18:00" data-day="Нд"></td>
+                  </tr>
+                  <tr>
+                      <th>19:00</th>
+                      <td data-hour="19:00" data-day="Пн"></td>
+                      <td data-hour="19:00" data-day="Вт"></td>
+                      <td data-hour="19:00" data-day="Ср"></td>
+                      <td data-hour="19:00" data-day="Чт"></td>
+                      <td data-hour="19:00" data-day="Пт"></td>
+                      <td data-hour="19:00" data-day="Сб"></td>
+                      <td data-hour="19:00" data-day="Нд"></td>
+                  </tr>
+              </table>
+              <button id="tableSend" onclick="populateInput()">Підтвердити дні</button>
+            </div>
+          </div>
+          <div class="form_tutoring">
+            <img src="img/FoxMessage1.png" alt="" class="imgRegistr">
+            <div>
+            <h4>2 Етап</h4>
+            <p>Заповніть всі поля форми</p>
+              <form action="telegram.php" method="POST" id="tutoringForm" onsubmit="return checkTutoringForm ()" >
+
+                  <div class="input-field ">
+                      <label for="first_name">Введіть ваше ім'я</label>
+                      <input id="first_name" type="text" name="tutoring_name" class="validate">
+                  </div>
+                  <div id="tutoringInputNull" style="color: red; display: none;">Поле обов'язкове для заповнення!&#8270;</div>
+                  <div id="tutoringInputError" style="color: red;display: none;">Некоректні дані! (Використовуйте лише літери)</div>
+
+
+                  <div class="input-field ">
+                      <label for="last_name">Введіть ваше прізвище</label>
+                      <input id="last_name" type="text" name="tutoring_last_name" class="validate">
+                  </div>
+                  <div id="tutoringSernameNull" style="color: red; display: none;">Поле обов'язкове для заповнення!&#8270;</div>
+                  <div id="tutoringSernameError" style="color: red;display: none;">Некоректні дані! (Використовуйте лише літери)</div>
+
+
+                  <div class="input-field ">
+                      <label for="email">Email</label>
+                      <input id="email" type="email" name="email" class="validate">
+                  </div>
+                  <div id="tutoringEmailNull" style="color: red; display: none;">Поле обов'язкове для заповнення!&#8270;</div>
+                  <div id="tutoringEmailError" style="color: red;display: none;">Невірний e-mail!</div>
+
+
+                  <div class="input-field ">
+                      <label for="phone">Телефон</label>
+                      <input id="phone" type="number" name="phone" class="validate">
+                  </div>
+                  <div id="tutoringPhoneNull" style="color: red; display: none;">Поле обов'язкове для заповнення!&#8270;</div>
+                  <div id="tutoringPhoneError" style="color: red;display: none;">Некоректні дані! (Мінімум десять цифр)</div>
+
+
+                  <div>
+                      <label for="date">Вибрана дата для занять</label>
+                      <textarea id="date" type="text" name="data" class="datepicker" readonly></textarea>
+                  </div>
+                  <div id="tutoringDateNull" style="color: red; display: none;">Поле обов'язкове для заповнення!&#8270;</div>
+                  <div id="tutoringDateError" style="color: red;display: none;">Дата неактуальна!</div>
+
+
+                  <div class="row">
+                          <div class="col">
+                              <p class="inpRadio">Виберіть клас:</p>
+                              <div>
+                                <input name="group" type="radio" value="1 клас" />
+                                <span>1 клас</span>
+                              </div>
+                              <div>
+                                <input name="group" type="radio" value="2 клас" />
+                                <span>2 клас</span>
+                              </div>
+                              <div>
+                                <input name="group" type="radio" value="3 клас" />
+                                <span>3 клас</span>
+                              </div>
+                              <div>
+                                <input name="group" type="radio" value="4 клас" />
+                                <span>4 клас</span>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <p class="inpRadio">Виберіть предмет:</p>
+                              <div class="lessons">
+                                <div>
+                                  <input name="lesson" type="radio" value="Укр мова"/>
+                                  <span>Українська мова</span>
+                                </div>
+                                <div>
+                                  <input name="lesson" type="radio"  value="Математика"/>
+                                  <span>Математика</span>
+                                </div>
+                                <div>
+                                  <input name="lesson" type="radio"  value="Англійська"/>
+                                  <span>Англійська мова</span>
+                                </div>
+                              </div>
+                          </div>
+                      </div> 
+                      <div id="tutoringBoxNull" style="color: red; display: none;">Потрібно обрати клас!&#8270;</div>
+                      <div id="tutoringLessonNull" style="color: red; display: none;">Потрібно обрати предмет!&#8270;</div>
+
+                      <button id="sendForm">Надіслати заявку</button>  
+              </form>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container interesting">
+      <h2>Цікавинки!</h2>
+      <p>Дізнавайтеся цікаві факти про числа!</p>
+      <div>
+          <input type="number" placeholder="Введіть число" class="inputApi">
+          <button class="btnApi">Дізнатися факти</button>
+      </div>
+      <div class="card d-none">
+          <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6>Факт</h6>
+              <p class="card-text"></p>
+          </div>
+      </div>
+  </div>
+
+
+  <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col ">
+              <h5>Links</h5>
+              <ul class="footer-menu">
+                <li> <a class="" href="index.html">Головна</a></li>
+                <li> <a class="" href="preschool.html">Підготовка до школи</a></li>
+                <li> <a class="" href="camp.html">Дитячий табір відпочинку</a></li>
+              </ul>
+            </div>
+          <div class="col "> 
+              <h4 class="footer-title">Клуб "пані Вчительки"<img src="img/logoFox.svg" alt="" class="logo"></h4> 
+              <div>
+                <a class="" href="https://instagram.com/klubpani?igshid=MzRlODBiNWFlZA=="><img src="img/instagram_icon.png" alt="" class="icon-footer"></a>
+                <a class="" href="#!"><img src="img/facebook_icon.png" alt="" class="icon-footer"></a>
+                <a class="" href="#!"><img src="img/telegram_icon.png" alt="" class="icon-footer"></a>
+                <a class="" href="#!"><img src="img/tube_you_icon.png" alt="" class="icon-footer"></a>
+              </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <div id="popup-container" class="container hidden">
+    <div id="popup-content">
+        <div>
+            <img src="img/Fox_with_phone.svg" alt="Fox with phone" class="fox_with_phone">
+        </div>
+        
+        <div>
+            <p>Якщо у Вас залишились питання з нами легко зв'язатися!</p>
+            <p>Наш телефон: <b>+38(095)9603584</b> Пошта: <b>klubpani@mail.com</b></p>
+        </div>
+        
+        <p id="close-popup"><i class="fa-regular fa-circle-xmark"></i></p>
+    </div>
+</div>
+     
+
+
+
+
+
+ 
+    
+<script src="js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="js/tutoring.js"></script>
+  
+</body>
+</html>

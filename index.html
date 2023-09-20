@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader_image"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/logoFox.svg" alt="logo fox" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Головна</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="tutoring.html">Репетиторство</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preschool.html">Підготовка до школи</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="camp.html">Дитячий табір відпочинку</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Клуб дитячого розвитку!
+            </span>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/books-slide3.jpg" class="d-block w-100" alt="books">
+                    <div class="books-slide">
+                        <h2>Клуб "пані Вчительки"</h2>
+                        <p class="titleP">Клуб дитячого розвитку!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/child-slide2.jpg" class="d-block w-100" alt="hands up">
+                    <div class="child-slide2">
+                        <h2>Клуб "пані Вчительки"</h2>
+                        <p class="titleP">Розвиток!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/child-slide4.jpg" class="d-block w-100" alt="children">
+                    <div class="child-slide3">
+                        <h2>Клуб "пані Вчительки"</h2>
+                        <p class="titleP">Відпочинок!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/child-slide.jpg" class="d-block w-100" alt="children with bags">
+                    <div class="child-slide4">
+                        <h2>Клуб "пані Вчительки"</h2>
+                        <p class="titleP">Дозвілля!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="about-section">
+            <h2 class="text-center">Про нас</h2>
+            <p class="container about-p">Місія нашого клубу  полягає у наданні оптимальних умов для всебічного розвитку кожної дитини. Основним призначенням клубу є забезпечення стимулювання навчального середовища, де діти можуть розвивати таланти, навички та здатність. Основні принципи роботи студії розвитку дитини включають:</p>
+            <div class="about">
+                <div>
+                    <div class="about-block">
+                        <div class="about-hover">
+                            <div id="aboutSupport">
+                                <div class="aboutPopup" onclick="addPopup()"> детальніше
+                                    <p class="popText" id="aboutText">Ми стимулюємо самостійність та самовизначення дитини. Вони навчаються приймати рішення, виконувати завдання самостійно і розвивати критичне мислення.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/support.png" alt="" class="aboutPicture">
+                    </div>
+                    <div class="about-block">
+                        <div class="about-hover">
+                            <div id="aboutActivity">
+                                <div class="aboutPopup" onclick="addPopupActivity()"> детальніше
+                                    <p class="popText" id="aboutActivityText">У нас ви знайдете широкий спектр діяльностей, таких як музика, малювання, танці, спорт, математика та багато інших, що  сприяють розвитку різних аспектів особистості дитини та сприяє їхньому загальному розвитку.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/actyvity.png" alt="" class="aboutPicture">
+                    </div>
+                </div>
+                <div>
+                    <div class="about-block">
+                        <div class="about-hover">
+                            <div id="aboutSociability">
+                                <div class="aboutPopup" onclick="addPopupSociability()"> детальніше
+                                    <p class="popText" id="aboutSociabilityText">З нами відбувається формування навичок спілкування, співпраці та роботи в команді. Діти навчаються розуміти та поважати інших, розвивати соціальну свідомість і вміння співпрацювати з іншими.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/social.png" alt="" class="aboutPicture">
+                    </div>
+                </div>
+                <div>
+                    <div class="about-block">
+                        <div class="about-hover">
+                            <div id="aboutArt">
+                                <div class="aboutPopup" onclick="addPopupArt()"> детальніше
+                                    <p class="popText" id="aboutArtText">Ми надаємо можливість дітям розкрити свій творчий потенціал і створити щось нове, заохочуємо експериментувати, досліджувати та розвивати свою уяву.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/art.png" alt="" class="aboutPicture">
+                    </div>
+                    <div class="about-block">
+                        <div class="about-hover">
+                            <div id="aboutIndividuality">
+                                <div class="aboutPopup" onclick="addPopupIndividuality()"> детальніше
+                                    <p class="popText" id="aboutIndividualityText">Ми враховуємо індивідуальні потреби та рівень розвитку кожної дитини. Розробляємо програми та завдання, що відповідають їхнім інтересам, здібностям та рівню розвитку.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/individual.png" alt="" class="aboutPicture">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+
+    <section class="container services_cont">
+        <h2 class= "text-center">Послуги</h2>
+        <div class="services">
+            <div class="services_block">
+                <h3 class="services_title">Репетиторство</h3>
+                <p>Репетиторство – ефективний спосіб навчання та особистого розвитку. Наші кваліфіковані репетитори допоможуть вам досягти ваших навчальних цілей. Незалежно від вашого рівня знань, ми надаємо індивідуальний підхід і допомагаємо зрозуміти складні концепції. Почніть з нами свій шлях до успіху сьогодні!</p>
+                <a href="tutoring.html">Перейти</a>
+            </div>
+            <div class="services_block">
+                <h3 class="services_title">Підготовка до школи</h3>
+                <p>Готуйте своє дитя до школи з нами! Наша програма підготовки надає комплексні знання та навички, необхідні для успішного старту в школі. Зацікавте малюка навчанням та розвитком, допоможемо йому стати впевненим учнем. Долайте перешкоди, обирайте нашу підтримку для якісної освіти.</p>
+                <a href="preschool.html">Перейти</a>
+            </div>
+            <div class="services_block">
+                <div>
+                    <h3 class="services_title">Дитячий літній табір</h3>
+                    <p>"Завітайте до нашого дитячого табору і даруйте своїй дитині незабутнє літо! Емоції, друзі, та навчання в природному середовищі. Оберіть якість і безпеку для вашої дитини – наш табір чекає на маленьких відпочивальників."</p>
+                </div>
+                <a href="">Перейти</a>
+            </div>
+        </div>
+    </section>
+  
+
+    <section class="gallery_block">
+        <div class="container">
+            <h2 class="text-center">Галерея</h2>
+            <div class="gallery">
+                <img id="currentImage" src="img/p2.png" alt="Фото 1">
+                <div class="thumbnails">
+                    <img src="img/p2.png" alt="Фото 1" onclick="changeImage('image1.jpg')">
+                    <img src="img/p2.png" alt="Фото 1" onclick="changeImage('image1.jpg')">
+                    <img src="img/p3.jpg" alt="Фото 2" onclick="changeImage('image2.jpg')">
+                    <img src="img/p3.jpg" alt="Фото 2" onclick="changeImage('image2.jpg')">
+                    <img src="img/p4 (2).webp" alt="Фото 3" onclick="changeImage('image3.jpg')">
+                    <img src="img/p4 (2).webp" alt="Фото 3" onclick="changeImage('image3.jpg')">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="info">
+        <div class="container">
+            <h2 class="text-center">Локація</h2>
+            <div class="block-info">
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10296.136908408605!2d24.008127575702414!3d49.8230219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae78ac19b0467%3A0x2b2237553544c794!2z0KHRgtGA0LjQudGB0YzQutC40Lkg0L_QsNGA0Lo!5e0!3m2!1suk!2sua!4v1692882921646!5m2!1suk!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact">
+                    <div>
+                        <h4>Адреса:</h4>
+                        <p>Львів, Львівська область, 79000 Стрийський парк</p>
+                    </div>
+                    <div>
+                        <h4>Телефони:</h4>
+                        <p>+38(095)9603584</p>
+                        <p>+38(095)9603584</p>
+                    </div>
+                    <div>
+                        <h4>Пошта:</h4>
+                        <a href="mailto:klubpani@mail.com">klubpani@mail.com</a>
+                    </div>
+                    <div>
+                        <h4>Mareting:</h4>
+                        <a class="" href="#!"><img src="img/instagram_icon.png" alt="" class="icon-footer"></a>
+                        <a class="" href="#!"><img src="img/facebook_icon.png" alt="" class="icon-footer"></a>
+                        <a class="" href="#!"><img src="img/telegram_icon.png" alt="" class="icon-footer"></a>
+                        <a class="" href="#!"><img src="img/tube_you_icon.png" alt="" class="icon-footer"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col ">
+                <h5>Перейти:</h5>
+                <ul class="footer-menu">
+                  <li> <a class="" href="tutoring.html">Репетиторство</a></li>
+                  <li> <a class="" href="preschool.html">Підготовка до школи</a></li>
+                  <li> <a class="" href="camp.html">Дитячий табір відпочинку</a></li>
+                </ul>
+              </div>
+            <div class="col "> 
+                <h4 class="footer-title">Клуб "пані Вчительки"<img src="img/logoFox.svg" alt="" class="logo"></h4> 
+                <p>Клуб дитячого розвитку!</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <div id="popup-container" class="container hidden">
+        <div id="popup-content">
+            <div>
+                <img src="img/Fox_with_phone.svg" alt="Fox with phone" class="fox_with_phone">
+            </div>
+            
+            <div>
+                <p>Якщо у Вас залишились питання з нами легко зв'язатися!</p>
+                <p>Наш телефон: <b>+38(095)9603584</b> Пошта: <b>klubpani@mail.com</b></p>
+            </div>
+            
+            <p id="close-popup"><i class="fa-regular fa-circle-xmark"></i></p>
+        </div>
+    </div>
+
+    
+    
+    
+    
+
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,427 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color:rgb(240,224,211);
+    z-index: 3;
+}
+.preloader_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    background: url(../img/fox_loading.gif)no-repeat 50% 50%;
+    background-size: 200px;
+}
+.loaded .preloader {
+    display: none;
+}
+
+
+/* nav */
+.logo{
+    width: 90px;
+} 
+.navName{
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 0 !important;
+}
+
+
+/* main */
+.mainPreschool {
+    text-align: center;
+    position: relative;
+    height: 550px;
+    background-image: url(../img/prescgollBG.jpg);
+    background-size: 100% 100%; 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.mainPreschoolGrad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 550px;
+    width: 100%;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+.mainPreschool h1 {
+    position: relative;
+    top: 15%;
+    z-index: 2;
+}
+.mainPreschool a {
+    position: relative;
+    top: 60%;
+    z-index: 2;
+    background: #e19e68;
+    background: -webkit-linear-gradient(82deg, #e19e68 0%, #ffddef 100%);
+    background: linear-gradient(82deg, #e19e68 0%, #ffddef 100%);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+.mainPreschool a:hover {
+    background: #d36276;
+    background: -webkit-linear-gradient(269deg, #d36276 0%, #fffaf6 100%);
+    background: linear-gradient(269deg, #d36276 0%, #fffaf6 100%);
+    color: black;
+}
+
+
+/* about */
+.aboutPreschool {
+    background-color: rgba(236, 234, 234, 0.28);
+    padding: 40px 0;
+}
+.aboutPreschool h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.aboutPreschoolCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.aboutBlock {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0px 0px 11px 0px rgba(211,98,118,0.75);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(211,98,118,0.75);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(211,98,118,0.75);
+}
+.aboutBlock img {
+    display: block;
+    margin: auto;
+    padding: 15px 0;
+}
+.aboutBlock p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.aboutBlock ul li {
+    padding:  0 7px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
+/* test block */
+.testBlock h3{
+    text-align: center;
+    padding: 40px 0 15px;
+}
+.testBlock p {
+    font-size: 18px;
+}
+.foxTest {
+    width: 200px;
+    height: 200px;
+}
+.testPointText li{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btnTest button{ 
+    position: relative;
+    font-size: 24px;
+    background: linear-gradient(45deg, #fffaf6, #d36276);
+    background-size: 200% 200%;
+    animation: gradientChange 2s linear infinite;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-color: #e19e68;;
+    color: white;
+    border-radius: 50px;
+}
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#result {
+    position: relative;
+    font-size: 24px;
+    background: linear-gradient(45deg, #fffaf6, #d36276);
+    background-size: 200% 200%;
+    animation: gradientChanged 2s linear infinite;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-color: #e19e68;;
+    color: white;
+    border-radius: 50px;
+}
+@keyframes gradientChanged {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#resultTest {
+    font-size: 18px;
+    font-weight: 500;
+}
+#btnTest, #result  {
+    text-align: center;
+}
+#test div {
+    text-align: center;
+}
+#test div span{
+    font-size: 50px;
+}
+.imgCorrect, .imgIncorrect {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.imgCorrect:hover, .imgIncorrect:hover {
+    border: 5px solid green;
+}
+
+
+
+
+
+/* form */
+.form_preschool {
+    padding: 40px 0;
+    background-color: rgba(236, 234, 234, 0.28);
+}
+#form h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+form {
+    margin: auto;
+    width: 40%;
+    background-color: #fff3df;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+label, .inpRadio {
+    font-size: 18px;
+    padding-top: 5px;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+.datepicker {
+    resize: none;
+    outline: none;
+}
+form input[type="text"]:hover,form input[type="email"]:hover,form input[type="number"]:hover {
+    background-color: #ddd;
+}
+
+#tableSend, #sendForm {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+form {
+    text-align: center;
+}
+.send_preschool {
+    padding: 10px 15px;
+    margin: 5px 0 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #3498db;
+    color: white;
+}
+.send_preschool:hover {
+    background-color: #91bedc;
+    color: black;
+}
+
+
+
+
+
+
+/* footer */
+.footerBlock h2 {
+    margin: 0;
+}
+  .page-footer {
+    background: #fedfdf;
+    background: -webkit-linear-gradient(0deg, #fedfdf 0%, #d36276 100%);
+    background: linear-gradient(0deg, #fedfdf 0%, #d36276 100%);
+  }
+  .page-footer>div {
+    padding-top: 30px;
+  }
+  .icon-footer {
+    width: 30px;
+    margin-right: 10px;
+    padding-bottom: 40px;
+  }
+  .footer-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  .footer-menu li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+  }
+  .footer-menu li a:hover {
+    color: black;
+  }
+  .footer-title {
+    color: white;
+    font-family: 'Lobster', cursive;
+    margin: 0;
+  }
+  .icon-footer {
+    width: 30px;
+    margin-right: 10px;
+    padding-bottom: 40px;
+  }
+
+
+
+  #popup-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(211, 98, 119, 0.708) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#popup-content {
+    display: flex;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.fox_with_phone {
+    width: 70px;
+}
+#close-popup {
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    cursor: pointer;
+}
+#close-popup:hover {
+    color: red;
+}
+
+  @media (max-width: 992px) {
+    .mainPreschool {
+        height: 400px;
+    }
+    .mainPreschoolGrad {
+        height: 400px;
+    }
+    .aboutBlock {
+        width: 300px;
+        height: 300px; 
+    }
+    form {
+        width: 60%;
+    }
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+      }
+  }
+  @media (max-width: 768px) {
+    .logo{
+        width: 50px;
+    }
+    .mainPreschool,.mainPreschoolGrad{
+        height: 300px;
+    }
+    .testBlock p {
+        font-size: 14px;
+    }
+    form {
+        width: 60%;
+    }
+    .popup-container {
+        display: none;
+    }
+  }
+  @media (max-width: 576px) {
+    *{
+        font-size: 10px;
+    }
+  }

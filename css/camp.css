@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color:rgb(240,224,211);
+    z-index: 3;
+}
+.preloader_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    background: url(../img/fox_loading.gif)no-repeat 50% 50%;
+    background-size: 200px;
+}
+.loaded .preloader {
+    display: none;
+}
+
+
+/* nav */
+.logo{
+    width: 90px;
+} 
+.navName{
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 0 !important;
+}
+
+
+/* main */
+.main {
+    position: relative;
+}
+.mainTent {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.fire {
+    width: 100px;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+.butterflies {
+    width: 110px;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+.animated-text {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    overflow: hidden; 
+    white-space: nowrap; 
+    font-weight: bold; 
+    color: white;
+}
+
+.animated-text span {
+    display: inline-block; 
+    opacity: 0; 
+    transform: translateY(1em); 
+    animation: appear 0.5s ease-out forwards; 
+}
+
+@keyframes appear {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+
+
+/* about */
+.about {
+    background-color: rgba(236, 234, 234, 0.28);
+    padding: 40px 0;
+}
+.about h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.carousel-inner{
+    border-radius: 40px;
+    height: 400px;
+}
+.aboutBlock {
+    position: relative;
+}
+.foxTent {
+    width: 150px;
+    
+}
+.about_butterflies {
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+
+
+
+/* our program */
+.ourProgram {
+    padding: 40px 0;
+}
+.ourProgram h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.ourProgram > div {
+    text-align: center;
+}
+.ourProgram_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.programBlock {
+    width: 300px;
+    height: 320px;
+    margin:  10px;
+    box-shadow: 0px 0px 7px 6px rgba(241,149,166,0.75);
+-webkit-box-shadow: 0px 0px 7px 6px rgba(241,149,166,0.75);
+-moz-box-shadow: 0px 0px 7px 6px rgba(241,149,166,0.75);
+}
+.programBlock >img{
+    width: 100px;
+    padding: 15px 0;
+}
+.programBlock h4 {
+    text-align: center;
+}
+.programBlock p { 
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+
+/* camp Schedule */
+.ScheduleInCamp {
+    background-color: rgba(236, 234, 234, 0.28);
+    padding: 40px 0;
+}
+.ScheduleInCampCont > h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.campSchedule {
+    width: 700px;
+    margin: auto;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #d36276;
+}
+
+
+
+
+/* info Camp */
+.infoCamp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.infoFirstBlock, .infoSecondBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+.infoFirstBlock h2, .infoSecondBlock h2 {
+    background-color: #e19f68;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+.infoSecondBlock p {
+    text-align: center;
+    font-size: 19px;
+    color: rgb(82, 82, 250);
+}
+.infoFirstBlock ul li, .infoSecondBlock ul li {
+    padding: 5px 0;
+    font-weight: 100;
+}
+.infoCamp_btn {
+    display: flex;
+    background: #e19e68;
+    background: -webkit-linear-gradient(82deg, #e19e68 0%, #ffddef 100%);
+    background: linear-gradient(82deg, #e19e68 0%, #ffddef 100%);
+    padding: 10px 0;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.infoCamp_btn:hover {
+    background: #d36276;
+    background: -webkit-linear-gradient(269deg, #d36276 0%, #fffaf6 100%);
+    background: linear-gradient(269deg, #d36276 0%, #fffaf6 100%);
+    color: black;
+}
+
+/* footer */
+.footerBlock h2 {
+    margin: 0;
+}
+  .page-footer {
+    background: #fedfdf;
+    background: -webkit-linear-gradient(0deg, #fedfdf 0%, #d36276 100%);
+    background: linear-gradient(0deg, #fedfdf 0%, #d36276 100%);
+  }
+  .page-footer>div {
+    padding-top: 30px;
+  }
+  .icon-footer {
+    width: 30px;
+    margin-right: 10px;
+    padding-bottom: 40px;
+  }
+  .footer-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  .footer-menu li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+  }
+  .footer-title {
+    color: white;
+    font-family: 'Lobster', cursive;
+    margin: 0;
+  }
+
+
+  #popup-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(211, 98, 119, 0.708) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#popup-content {
+    display: flex;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.fox_with_phone {
+    width: 70px;
+}
+#close-popup {
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    cursor: pointer;
+}
+#close-popup:hover {
+    color: red;
+}
+  @media (max-width: 992px) {
+    .mainTent {
+        height: 400px;
+    }
+    .carousel-inner{
+        border-radius: 40px;
+        height: 200px;
+    }
+    .ourProgram_contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+      }
+  }
+  @media (max-width: 768px) {
+    .logo{
+        width: 50px;
+    }
+    .mainTent {
+        height: 300px;
+    }
+    .animated-text {
+        left: 10%;
+    }
+    .fire {
+        width: 50px;
+    }
+    .about, .ourProgram, .ScheduleInCamp, .infoCamp {
+        padding: 20px 0;
+    }
+    .butterflies {
+        width: 50px;
+    }
+    .about p {
+        font-size: 12px;
+    }
+    .foxTent {
+        width: 50px;
+    }
+    .about_butterflies {
+        width: 20px;
+    }
+    .ourProgram_contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .programBlock {
+        width: 200px;
+
+    }
+    .programBlock > img {
+        width: 50px;
+    }
+    .programBlock p{
+        font-size: 14px;
+    }
+    .campSchedule {
+        width: 95%;
+    }
+    .popup-container {
+        display: none;
+    }
+  }
+  @media (max-width: 576px) {
+    h1 {
+        font-size: 18px;
+    }
+    .mainTent {
+        height: 200px;
+    }
+    .ourProgram_contain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .animated-text {
+        left: 1%;
+    }
+  }
